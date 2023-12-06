@@ -1,3 +1,5 @@
+package chrome;
+
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -27,8 +29,11 @@ public class ShadowRootTest extends TestBase {
 
         shadowRoot4.findElement(By.cssSelector("#searchInput")).sendKeys("Hi");
 
-
     }
+
+
+
+
 
     @Test
     @Tag("basic")
@@ -43,11 +48,13 @@ public class ShadowRootTest extends TestBase {
 
         searchInput.sendKeys("Hello");
 
-
     }
 
+
+
+
     @Test
-    void getShadowRoots() {
+    void getShadowRootWithJs() {
         openWebsite("chrome://downloads/");
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;

@@ -3,10 +3,9 @@ package firefox;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class FireFoxTestBase {
+public class TestBase {
     public WebDriver driver;
 
     @BeforeEach
